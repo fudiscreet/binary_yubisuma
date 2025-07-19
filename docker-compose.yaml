@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: binary_yubisuma
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    ports:
+      - "3000:3000" # バックエンド
+      - "3001:3000" # フロントエンド
+    volumes:
+      - .:/app:cached
+    environment:
+      - NODE_ENV=development
+    command: sleep infinity
+    tty: true

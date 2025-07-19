@@ -1,0 +1,34 @@
+{
+  "name": "BinaryYubisuma",
+  "dockerComposeFile": ["../docker-compose.yaml"],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "runServices": ["app"],
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": {
+      "label": "backend"
+    },
+    "3001": {
+      "label": "frontend"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-ja",
+        "vivaxy.vscode-conventional-commits",
+        "oderwat.indent-rainbow",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-containers",
+        "eamodio.gitlens",
+        "hediet.vscode-drawio",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "PKief.material-icon-theme"
+      ]
+    }
+  }
+}

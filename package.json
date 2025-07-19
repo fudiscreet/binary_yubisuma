@@ -1,0 +1,28 @@
+{
+  "name": "binary_yubisuma",
+  "version": "1.0.0",
+  "description": "2進法ユビスマ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fudiscreet/binary_yubisuma.git"
+  },
+  "author": "maple",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fudiscreet/binary_yubisuma/issues"
+  },
+  "homepage": "https://github.com/fudiscreet/binary_yubisuma#readme",
+  "dependencies": {
+    "vue-cli": "^2.9.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
