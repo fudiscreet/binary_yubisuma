@@ -6,14 +6,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# バックエンドの依存関係
-COPY backend/package*.json ./backend/
-RUN cd backend && npm install
-
-# フロントエンドの依存関係
-COPY frontend/package*.json ./frontend/
-RUN cd frontend && npm install
-
 # すべてのソースコードをコピー
 COPY . .
 
